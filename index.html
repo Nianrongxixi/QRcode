@@ -6,17 +6,42 @@
 		<meta charset="UTF-8">
 		<title></title>
 		<style type="text/css">
+
+			*{
+				margin:0;
+				padding:0;
+				font-family:Helvetica;
+			}
+			a{
+				text-decoration: none;
+				cursor:pointer;
+				color:black;
+			}
+			body{
+				background-image:url(back6.jpeg);
+				background-size:cover;
+
+			}
+			#header{
+				width:100%;
+				height:150px;
+				text-align:center;
+				background-color:white;
+				color:black;
+
+			}
 			#divUL div{
 				float: left;
 			}
-
 			#playground{
-				width:700px;
-				height:600px;
-				border:1px solid black;
-				background-image:url(fringeless.png);
+				width:350px;
+				height:300px;
+				/*margin-left:50px;*/
+				/*border:1px solid grey;*/
+				background-image:url(fringe.png);
 				background-size:cover;
-				overflow:hidden;
+				
+
 
 			}
 
@@ -34,30 +59,95 @@
 				position: absolute;
 
 			}
+			#leftbox{
+				width:380px;
+				height:460px;
+				position:relative;
+				margin-left:20px;
+				margin-top:20px;
+				float:left;
+				background-color:#f8f8f8;
+				padding:20px;
+				border-radius:10% 0 10% 0;
+				-webkit-box-shadow: 0 15px 10px #777;
+				  -moz-box-shadow: 0 15px 10px #777;
+				  box-shadow: 0 15px 10px #777;
+			 
+			}
+			#rightBox{
+				max-width:800px;
+				height:460px;
+				background-color:#f8f8f8;
+				position:relative;
+				float:left;
+				margin-left:20px;
+				margin-top:20px;
+				border-radius:0 8% 0 8%;
+				padding:20px;
+				-webkit-box-shadow: 0 15px 10px #777;
+				  -moz-box-shadow: 0 15px 10px #777;
+				  box-shadow: 0 15px 10px #777;
+			}
+			#topimage{
+				width:100%;
+				height:70%;
+				background-image:url(background.jpeg);
+				background-size:cover;
+			}
 			
+			button{
+				width:120px;
+				height:30px;
+				border-radius:10%;
+				background-color: white;
+
+			}
 		</style>
 	</head>
 	<body>
+		<div id="header">
+			<br><h5>Fringe Escape</h5>
+			<br>
+			<h1>Inverleith Park</h1>
+			<br>
+			EH3 5NZ
+		</div>
+		
+	
+	<div id="leftbox">
+		Post your photo on Instagram with hashtag #fringeless_3436 to see your pictures in our gallery and share your experience with the world.
+		<br>
 		<div class="wrapper">
+			<br>
 			<input type="file" multiple="multiple" name="listInput" id="listInput" value="" />
-
+			
 			<!-- <a href="#">save</a> -->
 			<!-- <button value="save">save</button> -->
 		</div>
-	</body>
-
-	
-	<div id ="playground">
-			<!-- <div id="divUL"> -->
-				
-			<!-- </div> -->
-		<div id ="food"></div>
-		<div id ="drink"></div>
+		<div id ="playground">
+				<!-- <div id="divUL"> -->
+					
+				<!-- </div> -->
+			<div id ="food"></div>
+			<div id ="drink"></div>
+		</div>
+		<br><br>
+		<button><a href="https://www.instagram.com/fortestsandtrials/">
+			Upload to Instagram
+		</a> </button>
 	</div>
+	<!-- <input name="print" type="button" id="bt" value="Print" /> -->
+	<div id="rightBox">
+		<div id="topimage"></div>
+		<div id="text">
+			<br><br>
+			<p>Inverleith Park is a large park of neatly maintained grass parkland with a tree lined perimeter and paths. There are grand gated entrances and iron railings around the perimeter. 
+			</p>
+		</div>
+	</div>
+	
 
-	<input name="print" type="button" id="bt" value="Print" />
-	<button name="Instagram" type="button"/><a href="https://www.instagram.com/fortestsandtrials/">Instagram</a></button>
-
+	</body>
 	<!-- <script>
 
 	var gallerydrink = document.getElementById('drink');
@@ -118,11 +208,11 @@
 				oUL.innerHTML += '<div id = divOfImg'+i+'><img id="img'+i+'" /></div>'
 				var imgList = document.getElementById("img"+i);	
 				var divList = document.getElementById("divOfImg"+i);
-				imgList.style.width = Math.floor(Math.random()*150)+"px";;
+				imgList.style.height = Math.floor(Math.random()*180)+"px";
 				imgList.src = window.URL.createObjectURL(files[i]);
 				divList.style.position = "absolute";
-				divList.style.left = Math.floor(Math.random()*300)+170+"px";
-				divList.style.top = Math.floor(Math.random()*250)+150+"px";
+				divList.style.left = Math.floor(Math.random()*100)+ 70+"px";
+				divList.style.top = Math.floor(Math.random()*50)+240+"px";
 				console.log(imgList.src);
 			}
 
